@@ -1,0 +1,11 @@
+<%= form_with model: article do |form| %>
+  <div>
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control mb-3" %>
+  </div>
+  <div>
+    <%= form.label :content, class: "form-label" %>
+    <%= form.text_field :content, class: "form-control mb-3" %>
+  </div>
+    <%= form.submit article.id ? "Update" : "Publish", class: "btn btn-primary" %>
+<% end %>

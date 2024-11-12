@@ -1,0 +1,7 @@
+<div class="col-10">
+      <article class="mb-5 border-start border-bottom border-secondary border-4 ps-4">
+        <h2> <%= @article.title %> </h2>
+        <p> <%= @article.content %> </p>
+      </article>
+</div>
+<%= link_to "Go back to articles", articles_path, class: "link-success" %>
